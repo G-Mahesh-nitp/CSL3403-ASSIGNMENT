@@ -1,0 +1,85 @@
+           <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding inline and inpage CSS and Github</title>
+</head>
+<style>
+    th {
+        text-align: center;
+        color: black;
+        font-size: x-large;
+        background-color: antiquewhite;
+    }
+
+    .data {
+        text-align: center;
+        color: gold;
+        font-size: xx-large;
+        background-color: rgb(34, 37, 49);
+    }
+
+    h1 {
+        color: gold;
+    }
+    p {
+        font-size: larger;
+        color: skyblue;
+    }
+
+    body {
+        background-image: url(back.jpg);
+    }
+
+    .inline {
+        background-color: rgb(29, 47, 95);
+        display: inline-block;
+        width: 45%;
+        margin: 14px;
+        padding: 14px;
+        border: 5px darkblue;
+    }
+
+    .inpage {
+        background-color: rgb(29, 47, 95);
+        display: inline-block;
+        width: 45%;
+        margin: 14px;
+        padding: 14px;
+        border: 5px darkblue;
+    
+    }
+</style>
+
+<body>
+    <table border="5px" width="100%">
+        <caption>
+            <h1>Student Information</h1>
+        </caption>
+        <tr>
+            <th>Name</th>
+            <th>Photo</th>
+            <th>Roll Number</th>
+            <th>Branch</th>
+        </tr>
+        <tr class="data">
+            <td>G Mahesh</td>
+            <td><img src="Mahesh.jpg" height="200px"></td>
+            <td>2006174</td>
+            <td>CSE</td>
+        </tr>
+    </table>
+    <div class="inline">
+        <h1 style="color:black;">Inline CSS</h1>
+        <p>Inline CSS allows you to apply style rules to specific HTML elements. Inlining CSS means putting CSS into an HTML file instead of an external CSS. Since inline CSS allows the application of a unique style to one HTML element, its usage is limited but is beneficial for creating unique attributes.</p>
+    </div>
+    <div class="inpage">
+        <h1 style="color:black;">Inpage CSS</h1>
+        <p>An internal CSS is used to define a style for a single HTML page. An internal CSS is defined in the head tag section of an HTML page, within a style tag element.</p>
+    </div>
+</body>
+
+</html>
